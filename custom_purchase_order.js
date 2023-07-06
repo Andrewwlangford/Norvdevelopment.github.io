@@ -18,7 +18,7 @@ function ready(fn) {
     }
     if (!row.Purchaser) {
       row.Purchaser = {
-        Name: 'Purchaser.Name',
+        Name: 'Purchaser.Nam',
         Street1: 'Purchaser.Street1',
         Street2: 'Purchaser.Street2',
         City: 'Purchaser.City',
