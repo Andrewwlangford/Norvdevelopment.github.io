@@ -32,9 +32,9 @@ function ready(fn) {
     if (!row.Vendor) {
       row.Vendor = {
         Name: 'Vendor.Name',
-        Street1: 'Address.L1',
-        Street2: 'Address.L2',
-        Street3: 'Address.L3',
+        Street1: 'Vendor.Address_L1',
+        Street2: 'Vendor.Address_L2',
+        Street3: 'Vendor.Address_L3',
         City: 'Vendor.City',
         Zip: '.Zip'
       }
