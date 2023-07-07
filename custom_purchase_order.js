@@ -35,7 +35,7 @@ function ready(fn) {
         Street1: 'Vendor.Address_L1',
         Street2: 'Vendor.Address_L2',
         Street3: 'Vendor.Address_L3',
-        City: 'Vendor.City',
+        City: 'Vendor.Address_L1',
         Zip: '.Zip'
       }
     }
