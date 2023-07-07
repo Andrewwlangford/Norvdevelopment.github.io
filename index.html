@@ -102,7 +102,7 @@
             </tr>
             <tr>
               <td>{{ order.Items }}</td>
-              <td class="money">{{ order.Total | currency }}</td>
+              <td class="money">{{ order.Total | currency('GBP') }}</td>
             </tr>
           </template>
           <template v-else>
@@ -116,9 +116,9 @@
             <tr v-for="item in order.Items">
               <td>{{ item.Code }}</td>
               <td>{{ item.Description }}</td>
-              <td class="money">{{ item.Price | currency }}</td>
+              <td class="money">{{ item.Price | currency('GBP') }}</td>
               <td class="number">{{ item.Quantity }}</td>
-              <td class="money">{{ item.Total | currency }}</td>
+              <td class="money">{{ item.Total | currency('GBP') }}</td>
             </tr>
           </template>
         </table>
@@ -126,11 +126,11 @@
         <table class="summary">
           <tr class="part" v-for="item in order.Summary">
             <td class="title">{{ item[0] }}</td>
-            <td class="details">{{ item[1] | currency }}</td>
+            <td class="details">{{ item[1] | currency('GBP') }}</td>
           </tr>
           <tr class="total">
             <td class="title">TOTAL</td>
-            <td class="details">{{ order.Total | currency }}</td>
+            <td class="details">{{ order.Total | currency('GBP') }}</td>
           </tr>
         </table>
 
