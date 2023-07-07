@@ -70,8 +70,8 @@ function ready(fn) {
   };
   let app = undefined;
 
-  Vue.filter('currency', formatNumberAsUSD)
-  function formatNumberAsUSD(value) {
+  Vue.filter('currency', formatNumberAsGBP)
+  function formatNumberAsGBP(value) {
     if (!value) { return '—'; }
     const result = Number(value).toLocaleString('en', {
       style: 'currency', currency: 'GBP'
