@@ -71,11 +71,15 @@
             </template>
             <template v-else>
               <div>{{ business.Name }}</div>
-              <template v-if="business.Street1">
-                {{ business.Street1 }},
+              <template v-if="business.Address_L1">
+                {{ business.Address_L1 }},
               </template>
-              <template v-if="business.Street2">
-                {{ business.Street2 }},
+              <template v-if="business.Address_L2">
+                {{ business.Address_L2 }},
+              <template v-if="business.Address_L2">
+                {{ business.Address_L2 }},
+              <template v-if="business.Address_L3">
+                {{ business.Address_L3 }},
               </template>
               {{ business.City }} {{ business.State }} {{ business.Zip }}
               <template v-if="business.Country">
